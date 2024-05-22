@@ -4,7 +4,7 @@ import Hero from './Comonents/Hero'
 import Program from './Comonents/Program'
 import ProgramList from './Comonents/ProgramsList'
 import Quizz from './Comonents/Quizz'
-import {HashRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 import programs from './Comonents/mockEndpoints/programs.js'
 
@@ -19,7 +19,7 @@ function App() {
         <ProgramList programs = {programs}/>
         <Program programs = {programs}/>
       </Route>
-      <Route exact path ='./quizz'>
+      <Route exact path ='/quizz'>
         <Quizz />
       </Route>
     <Footer />
