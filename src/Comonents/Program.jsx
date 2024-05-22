@@ -1,3 +1,4 @@
+import '../index.css'
 import { useState } from 'react';
 import '../media-queries.css'
 import CourseList from './CourseList';

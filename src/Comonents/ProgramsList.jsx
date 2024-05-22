@@ -1,3 +1,4 @@
+import '../index.css'
 import '../media-queries.css'
 function ProgramList(props){
 

@@ -1,3 +1,4 @@
+import '../index.css'
 import { useEffect, useState } from 'react';
 import '../media-queries.css'
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';

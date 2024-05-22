@@ -1,4 +1,4 @@
-import './App.css'
+import './index.css'
 import Footer from './Comonents/Footer'
 import Hero from './Comonents/Hero'
 import Program from './Comonents/Program'

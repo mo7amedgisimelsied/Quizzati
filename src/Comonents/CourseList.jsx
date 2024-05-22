@@ -1,3 +1,4 @@
+import '../index.css'
 import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import coursesData from './mockEndpoints/coursesData';

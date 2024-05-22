@@ -1,3 +1,4 @@
+import '../index.css'
 import '../media-queries.css'
 import image from '../assets/image.png'
 import AOS from 'aos'
