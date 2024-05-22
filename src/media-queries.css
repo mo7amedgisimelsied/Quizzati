@@ -1,0 +1,67 @@
+@media screen and (max-width: 640px) {
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero > img{
+        display: none;
+    }
+    .program--header{
+        flex-direction: column;
+        background-color: var(--my-dark);
+        color: white;
+      }
+
+      .headline{
+        width: 95%;
+      }
+      .hero{
+        margin: 0 auto;
+      }
+      .semester-container{
+        margin: 1rem 3%;
+      }
+      .quiz-board{
+        flex-direction: column;
+      }
+
+      .cards-list{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+
+      
+      
+}
+@media screen and (min-width: 768px) {
+    .headline{
+        width: 50%;
+      }
+      .semester-container{
+        margin: 0 20%;
+      }
+      .quiz{
+        width: 70%;
+      }
+      .nav{
+        width: 30%;
+      }
+      .cards-list{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 1280px) {
+    
+}
+
+@media screen and (max-width: 1536px) {
+    
+}
