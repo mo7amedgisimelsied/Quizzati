@@ -1,7 +1,7 @@
 {
   "homepage": "https://mo7amedgisimelsied.github.io/Quizzati",
   "name": "quizzati",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
