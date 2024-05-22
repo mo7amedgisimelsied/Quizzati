@@ -1,6 +1,6 @@
 // /Test/courses/${props.progId}/${props.sem}
 
-const coursesData = [
+export default [
     {
       courseId: 1,
       programId: 1,
@@ -15,6 +15,4 @@ const coursesData = [
     },
     // Add more courses here...
   ];
-  
-  export default coursesData;
   

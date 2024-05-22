@@ -4,7 +4,7 @@ import Hero from './Comonents/Hero'
 import Program from './Comonents/Program'
 import ProgramList from './Comonents/ProgramsList'
 import Quizz from './Comonents/Quizz'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 
 import programs from './Comonents/mockEndpoints/programs.js'
 
