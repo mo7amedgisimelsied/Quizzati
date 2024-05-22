@@ -6,7 +6,7 @@ import ProgramList from './Comonents/ProgramsList'
 import Quizz from './Comonents/Quizz'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
-import programs from './Comonents/mockEndpoints/programs'
+import programs from './Comonents/mockEndpoints/programs.js'
 
 
 function App() {
