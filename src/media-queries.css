@@ -29,6 +29,9 @@
       .cards-list{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       }
+      .quiz{
+        padding-bottom: 1rem;
+      }
 
       
       
@@ -42,6 +45,7 @@
       }
       .quiz{
         width: 70%;
+        padding: 2rem;
       }
       .nav{
         width: 30%;

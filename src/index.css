@@ -194,11 +194,15 @@ margin-bottom: 0.5rem;
 .quiz--container{
   background-color: #F2F2F2;
 }
-.quizz--header, .quiz, .nav{
+.quizz--header, .nav{
   background-color: white;
   border-radius: 1rem;
   margin: 0.5rem;
   padding: 2rem;
+}
+.quiz{
+  background-color: white;
+  border-radius: 1rem;
 }
 .quiz-board{
   display: flex;
@@ -215,7 +219,7 @@ ul{
 .question-form{
   background-color: #f7f7f1;
   margin: 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .score {
