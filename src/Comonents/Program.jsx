@@ -26,7 +26,7 @@ function Program(props){
                 <div>
                     <h2>{course.programName}</h2>
                     <p>{`${course.available} Courses available`}</p>
-                    <p>Find quizzes organized by semester and course within Computer Science bachelor program. Make your choice below.</p>
+                    <p>Find quizzes organized by semester and course within {course.programName} bachelor program. Make your choice below.</p>
                 </div>
             </div>
             {semesters.map(semester =>
