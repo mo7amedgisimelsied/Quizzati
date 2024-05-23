@@ -7,8 +7,8 @@ function ProgramList(props){
         <h2>Choose Your Program</h2>
         <div className='cards-list'>
         {props.programs.map(course => 
-        <a href={`#${course.programId}`} className='a-card' key={course.programId}>
-        <div className='card' data-aos = "fade-up" data-aos-duration="1000">
+        
+        <div className='card' data-aos = "fade-up" data-aos-duration="1000" onClick={() => props.scrollToElement(course.programId)} key={course.programId}>
             <div className='card-image'>
             <img src={course.programImage}/>
             </div>
@@ -17,7 +17,7 @@ function ProgramList(props){
             <p className='available'>{`${course.available} Courses available`}</p>
             <button className='btn btn-green'>See More</button>
             </div>
-            </a>
+           
         )}
         </div>
     </section>

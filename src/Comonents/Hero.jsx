@@ -6,9 +6,17 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 function Hero(){
     
+    
     useEffect(() => {
         AOS.init({duration: 2000})
-    }, [])
+    }, []);
+
+    function scroll()  
+    {const element = document.getElementById(`1`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    }
     return(
     <header>
         <div className='header'>
@@ -21,7 +29,7 @@ function Hero(){
         <p>Our extensive selection of MCQs, crafted by your fellow students and enhanced with AI, is ready to strengthen your understanding in various subjects. Start your preparation today - go ahead and give it your all 🔥</p>
         
         <div className='hero-btn'>
-        <a href='#1'><button className='btn btn-green'>Let's GO</button></a>
+        <button className='btn btn-green' onClick={scroll}>Let's GO</button>
         <a href='https://www.linkedin.com/in/mohamed-gisimelsied-426418249' target='_blank'><button className='btn btn-hero-outlilne'>Contact Developer</button></a>
         </div>
 

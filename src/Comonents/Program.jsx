@@ -1,12 +1,11 @@
 import '../index.css'
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import '../media-queries.css'
 import CourseList from './CourseList';
 
 
 
 function Program(props){
-    const targetRef = useRef(null);
     const [isShow, setShow] = useState(Array(7).fill(false));
     const semesters = [1, 2, 3, 4, 5, 6];
     const toggleShow = (semesterIndex) => {

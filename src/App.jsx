@@ -11,12 +11,17 @@ import programs from './Comonents/mockEndpoints/programs.js'
 
 function App() {
   
-  
+  const scrollToElement = (programId) => {
+    const element = document.getElementById(`${programId}`);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Router>
       <Route exact path = '/'>
         <Hero />
-        <ProgramList programs = {programs}/>
+        <ProgramList programs = {programs} scrollToElement={scrollToElement}/>
         <Program programs = {programs}/>
       </Route>
       <Route exact path ='/quizz/:courseId/:courseName'>
