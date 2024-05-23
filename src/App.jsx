@@ -11,6 +11,7 @@ import programs from './Comonents/mockEndpoints/programs.js'
 
 function App() {
   
+  
   const scrollToElement = (programId) => {
     const element = document.getElementById(`${programId}`);
     if (element) {
@@ -37,9 +38,6 @@ export default App
 
 /*
 Code related to fetching data from database:
-
-import { useEffect, useState } from 'react'
-
 
 const [programs, setPrograms] = useState([]);
   useEffect(() => {

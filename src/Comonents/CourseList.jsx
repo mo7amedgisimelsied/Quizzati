@@ -12,6 +12,7 @@ function CourseList(props){
         );
         setCourses(filteredCourses);
     }, []);
+
      
       
     let history = useHistory();
@@ -28,7 +29,7 @@ function CourseList(props){
             <img src="https://img.freepik.com/free-psd/3d-checklist-clipboard-pen-icon-isolated_47987-11864.jpg?w=740&t=st=1716228259~exp=1716228859~hmac=38c984cacda4e4d403b735eddf5fcd177a68cfc57db18c1d7d9d3b7dcf7e84b1" />
             <div>
             <h3>{course.courseName}</h3>
-            <p>DLBCSEMSE1</p>
+            <p>{course.code}</p>
             </div>
             </div>)}
             

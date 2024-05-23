@@ -10,6 +10,8 @@ function Quizz(){
   const [score, setScore] = useState(0);
   let location = useLocation();
   const [question, setQuestion] = useState([]);
+
+
   useEffect(() => {
     // Convert courseId to a number
     const courseIdNumber = Number(courseId);
@@ -198,7 +200,7 @@ export default Quizz;
   const [question, setQuestion] = useState([]);
   
   
-  const url = `http://localhost:8080/Test/questions/${location.state.course}`;
+    const url = `http://localhost:8080/Test/questions/${courseId}`;
 
     useEffect(() => {
       
