@@ -1,3 +1,5 @@
+![Screenshot (831)](https://github.com/mo7amedgisimelsied/Quizzati/assets/146651073/a92be8b6-043f-4021-84d6-dc3e24386c56)
+
 # Quizzati
 
 **Quizzati** is a React-based website designed to assist students of IU with practice questions derived from their coursebooks. The primary goal of this project is to help students prepare for their exams by providing much-needed resources, especially in areas where resources are limited.
