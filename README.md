@@ -23,6 +23,10 @@ To integrate the frontend with the backend:
   - Start the quiz and navigate between questions using a navigation bar.
   - Check and edit answers before moving to the next question to ensure learning and understanding.
 
+## Live Preview
+
+You can access the live preview of the Quizzati website [here](https://mo7amedgisimelsied.github.io/Quizzati/#/).
+
 ## Contributing Guidelines
 
 Contributions to Quizzati are highly appreciated to further enhance its utility for students. You can contribute by:
