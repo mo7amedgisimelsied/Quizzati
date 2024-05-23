@@ -17,7 +17,6 @@ function Quizz(){
   
     if (questionsData && !isNaN(courseIdNumber)) {
       const filteredQuestions = questionsData.filter((q) => q.courseId === courseIdNumber);
-      console.log("filteredQuestions:", filteredQuestions);
   
       setQuestion(filteredQuestions);
     }
