@@ -16,7 +16,7 @@ function CourseList(props){
       
     let history = useHistory();
     function handleClick(courseId, courseName){
-        history.push('/quizz', {course: courseId, name: courseName});
+        history.push(`/quizz/${courseId}/${courseName}`);
     }
     return(
         courses.length == 0? 

@@ -19,7 +19,7 @@ function App() {
         <ProgramList programs = {programs}/>
         <Program programs = {programs}/>
       </Route>
-      <Route exact path ='/quizz'>
+      <Route exact path ='/quizz/:courseId/:courseName'>
         <Quizz />
       </Route>
     <Footer />

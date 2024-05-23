@@ -1,22 +1,28 @@
 import '../index.css'
 import { useEffect, useState } from 'react';
 import '../media-queries.css'
-import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import { useLocation, useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import questionsData from './mockEndpoints/questionsData';
 
-function Quizz(){
 
+function Quizz(){
+  const { courseId, courseName } = useParams();
   const [score, setScore] = useState(0);
   let location = useLocation();
   const [question, setQuestion] = useState([]);
-    useEffect(() => {
-        const filteredQuestions = questionsData.filter(
-        (q) => q.courseId === location.state.course
-        );
-        setQuestion(filteredQuestions);
-    }, []);
+  useEffect(() => {
+    // Convert courseId to a number
+    const courseIdNumber = Number(courseId);
+  
+  
+    if (questionsData && !isNaN(courseIdNumber)) {
+      const filteredQuestions = questionsData.filter((q) => q.courseId === courseIdNumber);
+      console.log("filteredQuestions:", filteredQuestions);
+  
+      setQuestion(filteredQuestions);
+    }
+  }, []);
 
-      
 
   const correct = 
   <svg  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" width="30" height="30" fill='#00DF82'>
@@ -101,9 +107,7 @@ function Quizz(){
 
     const [isFinished, setFinished] = useState([true, false]);
 
-    
-    
-  
+
 
     return(
 
@@ -111,7 +115,7 @@ function Quizz(){
     <section className='quiz--container'>
 
       <div className='quizz--header'>
-      {location.state.name}
+      {courseName}
       </div>
 
       <div className='quiz-board'>
